@@ -1,0 +1,328 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /counter_top/inst_dut/assertion_inst
+=== Design Unit: work.counter_sva
+=================================================================================
+
+Directive Coverage:
+    Directives                       7         7         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/counter_top/inst_dut/assertion_inst/cover__zero 
+                                         counter_sva Verilog  SVA  counter_sva.sv(44)
+                                                                              1280 Covered   
+/counter_top/inst_dut/assertion_inst/cover__max 
+                                         counter_sva Verilog  SVA  counter_sva.sv(43)
+                                                                               668 Covered   
+/counter_top/inst_dut/assertion_inst/cover__assert_reset 
+                                         counter_sva Verilog  SVA  counter_sva.sv(42)
+                                                                               467 Covered   
+/counter_top/inst_dut/assertion_inst/cover__load_off_enable_on_down 
+                                         counter_sva Verilog  SVA  counter_sva.sv(41)
+                                                                              1397 Covered   
+/counter_top/inst_dut/assertion_inst/cover__load_off_enable_on_up 
+                                         counter_sva Verilog  SVA  counter_sva.sv(40)
+                                                                              3321 Covered   
+/counter_top/inst_dut/assertion_inst/cover__load_enable_off 
+                                         counter_sva Verilog  SVA  counter_sva.sv(39)
+                                                                              2021 Covered   
+/counter_top/inst_dut/assertion_inst/cover__load_on 
+                                         counter_sva Verilog  SVA  counter_sva.sv(38)
+                                                                              2792 Covered   
+
+=================================================================================
+=== Instance: /counter_package
+=== Design Unit: work.counter_package
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          7        na        na        na
+            Covergroup Bins         54        54         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /counter_package/counter_class/covcode          100.00%        100          -    Covered              
+    covered/total bins:                                    54         54          -                      
+    missing/total bins:                                     0         54          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint load_data_cv                           100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint count_out_cv_1                         100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint count_out_cv_2                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint count_out_cv_3                         100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint count_out_cv_4                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint max_count_cv                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint zero_cv                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/counter_package::counter_class::covcode  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    54         54          -                      
+    missing/total bins:                                     0         54          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint load_data_cv                           100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       184          1          -    Covered              
+        bin auto[1]                                       157          1          -    Covered              
+        bin auto[2]                                       162          1          -    Covered              
+        bin auto[3]                                       167          1          -    Covered              
+        bin auto[4]                                       170          1          -    Covered              
+        bin auto[5]                                       167          1          -    Covered              
+        bin auto[6]                                       182          1          -    Covered              
+        bin auto[7]                                       185          1          -    Covered              
+        bin auto[8]                                       210          1          -    Covered              
+        bin auto[9]                                       182          1          -    Covered              
+        bin auto[10]                                      162          1          -    Covered              
+        bin auto[11]                                      152          1          -    Covered              
+        bin auto[12]                                      194          1          -    Covered              
+        bin auto[13]                                      152          1          -    Covered              
+        bin auto[14]                                      204          1          -    Covered              
+        bin auto[15]                                      163          1          -    Covered              
+    Coverpoint count_out_cv_1                         100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       596          1          -    Covered              
+        bin auto[1]                                       378          1          -    Covered              
+        bin auto[2]                                       280          1          -    Covered              
+        bin auto[3]                                       263          1          -    Covered              
+        bin auto[4]                                       263          1          -    Covered              
+        bin auto[5]                                       240          1          -    Covered              
+        bin auto[6]                                       251          1          -    Covered              
+        bin auto[7]                                       258          1          -    Covered              
+        bin auto[8]                                       286          1          -    Covered              
+        bin auto[9]                                       283          1          -    Covered              
+        bin auto[10]                                      257          1          -    Covered              
+        bin auto[11]                                      221          1          -    Covered              
+        bin auto[12]                                      262          1          -    Covered              
+        bin auto[13]                                      258          1          -    Covered              
+        bin auto[14]                                      281          1          -    Covered              
+        bin auto[15]                                      297          1          -    Covered              
+    Coverpoint count_out_cv_2                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow1                                     151          1          -    Covered              
+    Coverpoint count_out_cv_3                         100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       231          1          -    Covered              
+        bin auto[1]                                       175          1          -    Covered              
+        bin auto[2]                                       124          1          -    Covered              
+        bin auto[3]                                       107          1          -    Covered              
+        bin auto[4]                                       109          1          -    Covered              
+        bin auto[5]                                       120          1          -    Covered              
+        bin auto[6]                                       100          1          -    Covered              
+        bin auto[7]                                       119          1          -    Covered              
+        bin auto[8]                                       115          1          -    Covered              
+        bin auto[9]                                       124          1          -    Covered              
+        bin auto[10]                                      118          1          -    Covered              
+        bin auto[11]                                      101          1          -    Covered              
+        bin auto[12]                                       94          1          -    Covered              
+        bin auto[13]                                      104          1          -    Covered              
+        bin auto[14]                                      111          1          -    Covered              
+        bin auto[15]                                      131          1          -    Covered              
+    Coverpoint count_out_cv_4                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow2                                      41          1          -    Covered              
+    Coverpoint max_count_cv                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      9332          1          -    Covered              
+        bin auto[1]                                       668          1          -    Covered              
+    Coverpoint zero_cv                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      8720          1          -    Covered              
+        bin auto[1]                                      1280          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /counter_package/counter_class/covcode          100.00%        100          -    Covered              
+    covered/total bins:                                    54         54          -                      
+    missing/total bins:                                     0         54          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint load_data_cv                           100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint count_out_cv_1                         100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint count_out_cv_2                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint count_out_cv_3                         100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint count_out_cv_4                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint max_count_cv                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint zero_cv                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/counter_package::counter_class::covcode  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    54         54          -                      
+    missing/total bins:                                     0         54          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint load_data_cv                           100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       184          1          -    Covered              
+        bin auto[1]                                       157          1          -    Covered              
+        bin auto[2]                                       162          1          -    Covered              
+        bin auto[3]                                       167          1          -    Covered              
+        bin auto[4]                                       170          1          -    Covered              
+        bin auto[5]                                       167          1          -    Covered              
+        bin auto[6]                                       182          1          -    Covered              
+        bin auto[7]                                       185          1          -    Covered              
+        bin auto[8]                                       210          1          -    Covered              
+        bin auto[9]                                       182          1          -    Covered              
+        bin auto[10]                                      162          1          -    Covered              
+        bin auto[11]                                      152          1          -    Covered              
+        bin auto[12]                                      194          1          -    Covered              
+        bin auto[13]                                      152          1          -    Covered              
+        bin auto[14]                                      204          1          -    Covered              
+        bin auto[15]                                      163          1          -    Covered              
+    Coverpoint count_out_cv_1                         100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       596          1          -    Covered              
+        bin auto[1]                                       378          1          -    Covered              
+        bin auto[2]                                       280          1          -    Covered              
+        bin auto[3]                                       263          1          -    Covered              
+        bin auto[4]                                       263          1          -    Covered              
+        bin auto[5]                                       240          1          -    Covered              
+        bin auto[6]                                       251          1          -    Covered              
+        bin auto[7]                                       258          1          -    Covered              
+        bin auto[8]                                       286          1          -    Covered              
+        bin auto[9]                                       283          1          -    Covered              
+        bin auto[10]                                      257          1          -    Covered              
+        bin auto[11]                                      221          1          -    Covered              
+        bin auto[12]                                      262          1          -    Covered              
+        bin auto[13]                                      258          1          -    Covered              
+        bin auto[14]                                      281          1          -    Covered              
+        bin auto[15]                                      297          1          -    Covered              
+    Coverpoint count_out_cv_2                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow1                                     151          1          -    Covered              
+    Coverpoint count_out_cv_3                         100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       231          1          -    Covered              
+        bin auto[1]                                       175          1          -    Covered              
+        bin auto[2]                                       124          1          -    Covered              
+        bin auto[3]                                       107          1          -    Covered              
+        bin auto[4]                                       109          1          -    Covered              
+        bin auto[5]                                       120          1          -    Covered              
+        bin auto[6]                                       100          1          -    Covered              
+        bin auto[7]                                       119          1          -    Covered              
+        bin auto[8]                                       115          1          -    Covered              
+        bin auto[9]                                       124          1          -    Covered              
+        bin auto[10]                                      118          1          -    Covered              
+        bin auto[11]                                      101          1          -    Covered              
+        bin auto[12]                                       94          1          -    Covered              
+        bin auto[13]                                      104          1          -    Covered              
+        bin auto[14]                                      111          1          -    Covered              
+        bin auto[15]                                      131          1          -    Covered              
+    Coverpoint count_out_cv_4                         100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow2                                      41          1          -    Covered              
+    Coverpoint max_count_cv                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      9332          1          -    Covered              
+        bin auto[1]                                       668          1          -    Covered              
+    Coverpoint zero_cv                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      8720          1          -    Covered              
+        bin auto[1]                                      1280          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/counter_top/inst_dut/assertion_inst/cover__zero 
+                                         counter_sva Verilog  SVA  counter_sva.sv(44)
+                                                                              1280 Covered   
+/counter_top/inst_dut/assertion_inst/cover__max 
+                                         counter_sva Verilog  SVA  counter_sva.sv(43)
+                                                                               668 Covered   
+/counter_top/inst_dut/assertion_inst/cover__assert_reset 
+                                         counter_sva Verilog  SVA  counter_sva.sv(42)
+                                                                               467 Covered   
+/counter_top/inst_dut/assertion_inst/cover__load_off_enable_on_down 
+                                         counter_sva Verilog  SVA  counter_sva.sv(41)
+                                                                              1397 Covered   
+/counter_top/inst_dut/assertion_inst/cover__load_off_enable_on_up 
+                                         counter_sva Verilog  SVA  counter_sva.sv(40)
+                                                                              3321 Covered   
+/counter_top/inst_dut/assertion_inst/cover__load_enable_off 
+                                         counter_sva Verilog  SVA  counter_sva.sv(39)
+                                                                              2021 Covered   
+/counter_top/inst_dut/assertion_inst/cover__load_on 
+                                         counter_sva Verilog  SVA  counter_sva.sv(38)
+                                                                              2792 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 7
+
+Total Coverage By Instance (filtered view): 100.00%
+
