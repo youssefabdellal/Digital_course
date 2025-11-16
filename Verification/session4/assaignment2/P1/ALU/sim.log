@@ -1,0 +1,865 @@
+# vsim -voptargs="+acc" ALU_top -coverage -sv_seed random -l sim.log 
+# Start time: 19:35:09 on Sep 18,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ALU_tb.sv(7): (vopt-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+# Sv_Seed = 667350365
+# ** Error: Assertion error.
+#    Time: 194 ns Started: 190 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 29
+# ** Error: Assertion error.
+#    Time: 222 ns Started: 218 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 30
+# ** Error: Assertion error.
+#    Time: 294 ns Started: 290 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 29
+# ** Error: Assertion error.
+#    Time: 470 ns Started: 466 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 28
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 802 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+add wave -position insertpoint  \
+sim:/ALU_top/inst_interface/clk \
+sim:/ALU_top/inst_interface/reset \
+sim:/ALU_top/inst_interface/opcode \
+sim:/ALU_top/inst_interface/A \
+sim:/ALU_top/inst_interface/B \
+sim:/ALU_top/inst_interface/C
+add wave /ALU_top/inst_design/inst_sva/assert__reset_on /ALU_top/inst_design/inst_sva/assert__reset_off_add /ALU_top/inst_design/inst_sva/assert__reset_off_sub /ALU_top/inst_design/inst_sva/assert__reset_off_NotA /ALU_top/inst_design/inst_sva/assert__reset_off_orB /ALU_top/inst_design/inst_sva/assert__default_case /ALU_top/inst_tb/#ublk#73512610#6/#ublk#73512610#13/immed__15
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+run -all
+# ** Error: Assertion error.
+#    Time: 194 ns Started: 190 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 29
+# ** Error: Assertion error.
+#    Time: 222 ns Started: 218 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 30
+# ** Error: Assertion error.
+#    Time: 294 ns Started: 290 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 29
+# ** Error: Assertion error.
+#    Time: 470 ns Started: 466 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 28
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 802 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:36:19 on Sep 18,2025
+# vlog -reportprogress 300 ALU.sv ALU_if.sv ALU_sva.sv ALU_tb.sv ALU_top.sv "+cover" 
+# -- Compiling module ALU_4_bit
+# -- Compiling interface ALU_if
+# -- Importing package ALU_package
+# -- Compiling module ALU_sva
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_tb_sv_unit
+# -- Compiling module ALU_tb
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_top_sv_unit
+# -- Compiling module ALU_top
+# 
+# Top level modules:
+# 	ALU_top
+# End time: 19:36:19 on Sep 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:36:27 on Sep 18,2025, Elapsed time: 0:01:18
+# Errors: 6, Warnings: 2
+# vsim -voptargs="+acc" ALU_top -coverage -sv_seed random -l sim.log 
+# Start time: 19:36:27 on Sep 18,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+# Sv_Seed = 50768301
+# ** Error: Assertion error.
+#    Time: 298 ns Started: 294 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 29
+# ** Error: Assertion error.
+#    Time: 346 ns Started: 342 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 29
+# ** Error: Assertion error.
+#    Time: 538 ns Started: 534 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 27
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 802 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:36:51 on Sep 18,2025
+# vlog -reportprogress 300 ALU.sv ALU_if.sv ALU_sva.sv ALU_tb.sv ALU_top.sv "+cover" 
+# -- Compiling module ALU_4_bit
+# -- Compiling interface ALU_if
+# -- Importing package ALU_package
+# -- Compiling module ALU_sva
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_tb_sv_unit
+# -- Compiling module ALU_tb
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_top_sv_unit
+# -- Compiling module ALU_top
+# 
+# Top level modules:
+# 	ALU_top
+# End time: 19:36:51 on Sep 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:36:59 on Sep 18,2025, Elapsed time: 0:00:32
+# Errors: 5, Warnings: 1
+# vsim -voptargs="+acc" ALU_top -coverage -sv_seed random -l sim.log 
+# Start time: 19:36:59 on Sep 18,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+# Sv_Seed = 71752241
+# ** Error: Assertion error.
+#    Time: 486 ns Started: 482 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 30
+# ** Error: Assertion error.
+#    Time: 610 ns Started: 606 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 30
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 802 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:37:33 on Sep 18,2025
+# vlog -reportprogress 300 ALU.sv ALU_if.sv ALU_sva.sv ALU_tb.sv ALU_top.sv "+cover" 
+# -- Compiling module ALU_4_bit
+# -- Compiling interface ALU_if
+# -- Importing package ALU_package
+# -- Compiling module ALU_sva
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_tb_sv_unit
+# -- Compiling module ALU_tb
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_top_sv_unit
+# -- Compiling module ALU_top
+# 
+# Top level modules:
+# 	ALU_top
+# End time: 19:37:33 on Sep 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# ** Error: Acs sdne.
+# $
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:37:40 on Sep 18,2025, Elapsed time: 0:00:41
+# Errors: 4, Warnings: 1
+# vsim -voptargs="+acc" ALU_top -coverage -sv_seed random -l sim.log 
+# Start time: 19:37:40 on Sep 18,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+# Sv_Seed = 482792345
+# ** Error: Assertion error.
+#    Time: 50 ns Started: 46 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 30
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 802 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:38:05 on Sep 18,2025
+# vlog -reportprogress 300 ALU.sv ALU_if.sv ALU_sva.sv ALU_tb.sv ALU_top.sv "+cover" 
+# -- Compiling module ALU_4_bit
+# -- Compiling interface ALU_if
+# -- Importing package ALU_package
+# -- Compiling module ALU_sva
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_tb_sv_unit
+# -- Compiling module ALU_tb
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_top_sv_unit
+# -- Compiling module ALU_top
+# 
+# Top level modules:
+# 	ALU_top
+# End time: 19:38:05 on Sep 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:38:12 on Sep 18,2025, Elapsed time: 0:00:32
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" ALU_top -coverage -sv_seed random -l sim.log 
+# Start time: 19:38:12 on Sep 18,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+# Sv_Seed = 1848043733
+# ** Error: Assertion error.
+#    Time: 234 ns Started: 230 ns  Scope: ALU_top.inst_design.inst_sva File: ALU_sva.sv Line: 27
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 802 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:38:55 on Sep 18,2025
+# vlog -reportprogress 300 ALU.sv ALU_if.sv ALU_sva.sv ALU_tb.sv ALU_top.sv "+cover" 
+# -- Compiling module ALU_4_bit
+# -- Compiling interface ALU_if
+# -- Importing package ALU_package
+# -- Compiling module ALU_sva
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_tb_sv_unit
+# -- Compiling module ALU_tb
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_top_sv_unit
+# -- Compiling module ALU_top
+# 
+# Top level modules:
+# 	ALU_top
+# End time: 19:38:55 on Sep 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:39:05 on Sep 18,2025, Elapsed time: 0:00:53
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" ALU_top -coverage -sv_seed random -l sim.log 
+# Start time: 19:39:05 on Sep 18,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: ALU_tb.sv(7): (vopt-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+# Sv_Seed = 1552338825
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 402 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+add wave -position insertpoint  \
+sim:/ALU_top/inst_interface/clk \
+sim:/ALU_top/inst_interface/reset \
+sim:/ALU_top/inst_interface/opcode \
+sim:/ALU_top/inst_interface/A \
+sim:/ALU_top/inst_interface/B \
+sim:/ALU_top/inst_interface/C
+add wave /ALU_top/inst_design/inst_sva/assert__reset_on /ALU_top/inst_design/inst_sva/assert__reset_off_add /ALU_top/inst_design/inst_sva/assert__reset_off_sub /ALU_top/inst_design/inst_sva/assert__reset_off_NotA /ALU_top/inst_design/inst_sva/assert__reset_off_orB /ALU_top/inst_design/inst_sva/assert__default_case /ALU_top/inst_tb/#ublk#73512610#6/#ublk#73512610#13/immed__15
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+run -all
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 402 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+run
+run
+run -continue
+run -continue
+run -step
+# Break key hit
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:45:17 on Sep 18,2025
+# vlog -reportprogress 300 ALU.sv ALU_if.sv ALU_sva.sv ALU_tb.sv ALU_top.sv "+cover" 
+# -- Compiling module ALU_4_bit
+# -- Compiling interface ALU_if
+# -- Importing package ALU_package
+# -- Compiling module ALU_sva
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_tb_sv_unit
+# -- Compiling module ALU_tb
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): ALU_tb.sv(23): (vlog-8386) An enum variable 'obj1.opcode' of type 'opcode_t' may only be assigned the same enum typed variable or one of its values. Value 'x' requires an explicit cast.
+# End time: 19:45:17 on Sep 18,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog *v +cover "
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:45:52 on Sep 18,2025, Elapsed time: 0:06:47
+# Errors: 3, Warnings: 2
+vcover report ALU_4_bit.ucdb -details -annotate -all
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 19:47:16 on Sep 18,2025
+# vcover report ALU_4_bit.ucdb -details -annotate -all 
+# Coverage Report by instance with details
+# 
+# =================================================================================
+# === Instance: /\ALU_top#inst_design /inst_sva
+# === Design Unit: work.ALU_sva
+# =================================================================================
+# 
+# Assertion Coverage:
+#     Assertions                       6         5         1    83.33%
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /\ALU_top#inst_design /inst_sva/assert__default_case
+#                      ALU_sva.sv(31)                     0          0
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_orB
+#                      ALU_sva.sv(30)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_NotA
+#                      ALU_sva.sv(29)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_sub
+#                      ALU_sva.sv(28)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_add
+#                      ALU_sva.sv(27)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_on
+#                      ALU_sva.sv(26)                     0          1
+# 
+# Directive Coverage:
+#     Directives                       6         5         1    83.33%
+# 
+# DIRECTIVE COVERAGE:
+# --------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Hits Status    
+#                                          Unit   UnitType                                     
+# --------------------------------------------------------------------------------------------
+# /\ALU_top#inst_design /inst_sva/cover__default_case 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(38)     0 ZERO      
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_orB 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(37)    25 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_NotA 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(36)    25 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_sub 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(35)    73 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_add 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(34)    25 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_on 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(33)     1 Covered   
+# 
+# =================================================================================
+# === Instance: /\ALU_top#inst_design 
+# === Design Unit: work.ALU_4_bit
+# =================================================================================
+# Branch Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                         7         6         1    85.71%
+# 
+# ================================Branch Details================================
+# 
+# Branch Coverage for instance /\ALU_top#inst_design 
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ALU.sv
+# ------------------------------------CASE Branch------------------------------------
+#     7                                        100     Count coming in to CASE
+#     8               1                         25           	0:            Alu_out = ALU_DUT.A + ALU_DUT.B;
+# 
+#     9               1                         25           	1:            Alu_out = ALU_DUT.A - ALU_DUT.B;
+# 
+#     10              1                         25           	2:          Alu_out = ~ALU_DUT.A;
+# 
+#     11              1                         25              3:  Alu_out = |ALU_DUT.B;
+# 
+#     12              1                    ***0***              default:  Alu_out = 5'b0;
+# 
+# Branch totals: 4 hits of 5 branches = 80.00%
+# 
+# ------------------------------------IF Branch------------------------------------
+#     18                                       152     Count coming in to IF
+#     18              1                          2           if (ALU_DUT.reset)
+# 
+#     20              1                        150           else
+# 
+# Branch totals: 2 hits of 2 branches = 100.00%
+# 
+# 
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                       9         8         1    88.88%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /\ALU_top#inst_design  --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ALU.sv
+#     1                                                module ALU_4_bit (ALU_if.DUT ALU_DUT);
+# 
+#     2                                                
+# 
+#     3                                                   reg signed [4:0] 	    Alu_out; // ALU output in 2's complement
+# 
+#     4                                                
+# 
+#     5                                                   // Do the operation
+# 
+#     6               1                        100        always @* begin
+# 
+#     7                                                      case (ALU_DUT.opcode)
+# 
+#     8               1                         25           	0:            Alu_out = ALU_DUT.A + ALU_DUT.B;
+# 
+#     9               1                         25           	1:            Alu_out = ALU_DUT.A - ALU_DUT.B;
+# 
+#     10              1                         25           	2:          Alu_out = ~ALU_DUT.A;
+# 
+#     11              1                         25              3:  Alu_out = |ALU_DUT.B;
+# 
+#     12              1                    ***0***              default:  Alu_out = 5'b0;
+# 
+#     13                                                     endcase
+# 
+#     14                                                  end // always @ *
+# 
+#     15                                               
+# 
+#     16                                                  // Register output C
+# 
+#     17              1                        152        always @(posedge ALU_DUT.clk or posedge ALU_DUT.reset) begin
+# 
+#     18                                                     if (ALU_DUT.reset)
+# 
+#     19              1                          2     	     ALU_DUT.C <= 5'b0;
+# 
+#     20                                                     else
+# 
+#     21              1                        150     	     ALU_DUT.C<= Alu_out;
+# 
+# 
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                         10        10         0   100.00%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /\ALU_top#inst_design  --
+# 
+#                                               Node      1H->0L      0L->1H                          "Coverage"
+#                                               ---------------------------------------------------------------
+#                                       Alu_out[4-0]           1           1                              100.00 
+# 
+# Total Node Count     =          5 
+# Toggled Node Count   =          5 
+# Untoggled Node Count =          0 
+# 
+# Toggle Coverage      =     100.00% (10 of 10 bins)
+# 
+# 
+# DIRECTIVE COVERAGE:
+# --------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Hits Status    
+#                                          Unit   UnitType                                     
+# --------------------------------------------------------------------------------------------
+# /\ALU_top#inst_design /inst_sva/cover__default_case 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(38)     0 ZERO      
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_orB 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(37)    25 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_NotA 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(36)    25 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_sub 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(35)    73 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_add 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(34)    25 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_on 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(33)     1 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 83.33%  COVERS: 6
+# 
+# ASSERTION RESULTS:
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /\ALU_top#inst_design /inst_sva/assert__default_case
+#                      ALU_sva.sv(31)                     0          0
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_orB
+#                      ALU_sva.sv(30)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_NotA
+#                      ALU_sva.sv(29)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_sub
+#                      ALU_sva.sv(28)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_add
+#                      ALU_sva.sv(27)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_on
+#                      ALU_sva.sv(26)                     0          1
+# 
+# Total Coverage By Instance (filtered view): 88.25%
+# 
+# End time: 19:47:16 on Sep 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:48:16 on Sep 18,2025
+# vlog -reportprogress 300 ALU.sv ALU_if.sv ALU_sva.sv ALU_tb.sv ALU_top.sv "+cover" 
+# -- Compiling module ALU_4_bit
+# -- Compiling interface ALU_if
+# -- Importing package ALU_package
+# -- Compiling module ALU_sva
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_tb_sv_unit
+# -- Compiling module ALU_tb
+# ** Warning: ALU_tb.sv(7): (vlog-2244) Variable 'obj1' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling package ALU_top_sv_unit
+# -- Compiling module ALU_top
+# 
+# Top level modules:
+# 	ALU_top
+# End time: 19:48:16 on Sep 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" ALU_top -coverage -sv_seed random -l sim.log 
+# Start time: 19:48:16 on Sep 18,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+# Sv_Seed = 1600574561
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 402 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+add wave -position insertpoint  \
+sim:/ALU_top/inst_interface/clk \
+sim:/ALU_top/inst_interface/reset \
+sim:/ALU_top/inst_interface/opcode \
+sim:/ALU_top/inst_interface/A \
+sim:/ALU_top/inst_interface/B \
+sim:/ALU_top/inst_interface/C
+add wave /ALU_top/inst_design/inst_sva/assert__reset_on /ALU_top/inst_design/inst_sva/assert__reset_off_add /ALU_top/inst_design/inst_sva/assert__reset_off_sub /ALU_top/inst_design/inst_sva/assert__reset_off_NotA /ALU_top/inst_design/inst_sva/assert__reset_off_orB /ALU_top/inst_design/inst_sva/assert__default_case /ALU_top/inst_tb/#ublk#73512610#6/#ublk#73512610#13/immed__15
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.ALU_package(fast)
+# Loading work.ALU_top_sv_unit(fast)
+# Loading work.ALU_top(fast)
+# Loading work.ALU_if(fast__1)
+# Loading work.ALU_4_bit(fast)
+# Loading work.ALU_sva(fast)
+# Loading work.ALU_tb_sv_unit(fast)
+# Loading work.ALU_tb(fast)
+run -all
+# ** Note: $stop    : ALU_tb.sv(21)
+#    Time: 402 ns  Iteration: 1  Instance: /ALU_top/inst_tb
+# Break in Module ALU_tb at ALU_tb.sv line 21
+coverage exclude -src ALU.sv -line 12
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1_ALU/f.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:52:44 on Sep 18,2025, Elapsed time: 0:04:28
+# Errors: 2, Warnings: 1
+vcover report ALU_4_bit.ucdb -details -annotate -all
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 19:52:50 on Sep 18,2025
+# vcover report ALU_4_bit.ucdb -details -annotate -all 
+# Coverage Report by instance with details
+# 
+# =================================================================================
+# === Instance: /\ALU_top#inst_design /inst_sva
+# === Design Unit: work.ALU_sva
+# =================================================================================
+# 
+# Assertion Coverage:
+#     Assertions                       6         5         1    83.33%
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /\ALU_top#inst_design /inst_sva/assert__default_case
+#                      ALU_sva.sv(31)                     0          0
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_orB
+#                      ALU_sva.sv(30)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_NotA
+#                      ALU_sva.sv(29)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_sub
+#                      ALU_sva.sv(28)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_add
+#                      ALU_sva.sv(27)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_on
+#                      ALU_sva.sv(26)                     0          1
+# 
+# Directive Coverage:
+#     Directives                       5         5         0   100.00%
+# 
+# DIRECTIVE COVERAGE:
+# --------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Hits Status    
+#                                          Unit   UnitType                                     
+# --------------------------------------------------------------------------------------------
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_orB 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(37)    23 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_NotA 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(36)    24 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_sub 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(35)    25 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_add 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(34)    24 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_on 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(33)     2 Covered   
+# 
+# =================================================================================
+# === Instance: /\ALU_top#inst_design 
+# === Design Unit: work.ALU_4_bit
+# =================================================================================
+# Branch Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Branches                         6         6         0   100.00%
+# 
+# ================================Branch Details================================
+# 
+# Branch Coverage for instance /\ALU_top#inst_design 
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ALU.sv
+# ------------------------------------CASE Branch------------------------------------
+#     7                                         99     Count coming in to CASE
+#     8               1                         25           	0:            Alu_out = ALU_DUT.A + ALU_DUT.B;
+# 
+#     9               1                         25           	1:            Alu_out = ALU_DUT.A - ALU_DUT.B;
+# 
+#     10              1                         24           	2:          Alu_out = ~ALU_DUT.A;
+# 
+#     11              1                         25              3:  Alu_out = |ALU_DUT.B;
+# 
+# Branch totals: 4 hits of 4 branches = 100.00%
+# 
+# ------------------------------------IF Branch------------------------------------
+#     18                                       103     Count coming in to IF
+#     18              1                          4           if (ALU_DUT.reset)
+# 
+#     20              1                         99           else
+# 
+# Branch totals: 2 hits of 2 branches = 100.00%
+# 
+# 
+# Statement Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Statements                       8         8         0   100.00%
+# 
+# ================================Statement Details================================
+# 
+# Statement Coverage for instance /\ALU_top#inst_design  --
+# 
+#     Line         Item                      Count     Source 
+#     ----         ----                      -----     ------ 
+#   File ALU.sv
+#     1                                                module ALU_4_bit (ALU_if.DUT ALU_DUT);
+# 
+#     2                                                
+# 
+#     3                                                   reg signed [4:0] 	    Alu_out; // ALU output in 2's complement
+# 
+#     4                                                
+# 
+#     5                                                   // Do the operation
+# 
+#     6               1                         99        always @* begin
+# 
+#     7                                                      case (ALU_DUT.opcode)
+# 
+#     8               1                         25           	0:            Alu_out = ALU_DUT.A + ALU_DUT.B;
+# 
+#     9               1                         25           	1:            Alu_out = ALU_DUT.A - ALU_DUT.B;
+# 
+#     10              1                         24           	2:          Alu_out = ~ALU_DUT.A;
+# 
+#     11              1                         25              3:  Alu_out = |ALU_DUT.B;
+# 
+#     12                                                        default:  Alu_out = 5'b0;
+# 
+#     13                                                     endcase
+# 
+#     14                                                  end // always @ *
+# 
+#     15                                               
+# 
+#     16                                                  // Register output C
+# 
+#     17              1                        103        always @(posedge ALU_DUT.clk or posedge ALU_DUT.reset) begin
+# 
+#     18                                                     if (ALU_DUT.reset)
+# 
+#     19              1                          4     	     ALU_DUT.C <= 5'b0;
+# 
+#     20                                                     else
+# 
+#     21              1                         99     	     ALU_DUT.C<= Alu_out;
+# 
+# 
+# Toggle Coverage:
+#     Enabled Coverage              Bins      Hits    Misses  Coverage
+#     ----------------              ----      ----    ------  --------
+#     Toggles                         10        10         0   100.00%
+# 
+# ================================Toggle Details================================
+# 
+# Toggle Coverage for instance /\ALU_top#inst_design  --
+# 
+#                                               Node      1H->0L      0L->1H                          "Coverage"
+#                                               ---------------------------------------------------------------
+#                                       Alu_out[4-0]           1           1                              100.00 
+# 
+# Total Node Count     =          5 
+# Toggled Node Count   =          5 
+# Untoggled Node Count =          0 
+# 
+# Toggle Coverage      =     100.00% (10 of 10 bins)
+# 
+# 
+# DIRECTIVE COVERAGE:
+# --------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Hits Status    
+#                                          Unit   UnitType                                     
+# --------------------------------------------------------------------------------------------
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_orB 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(37)    23 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_NotA 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(36)    24 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_sub 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(35)    25 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_off_add 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(34)    24 Covered   
+# /\ALU_top#inst_design /inst_sva/cover__reset_on 
+#                                          ALU_sva Verilog  SVA  ALU_sva.sv(33)     2 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 5
+# 
+# ASSERTION RESULTS:
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /\ALU_top#inst_design /inst_sva/assert__default_case
+#                      ALU_sva.sv(31)                     0          0
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_orB
+#                      ALU_sva.sv(30)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_NotA
+#                      ALU_sva.sv(29)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_sub
+#                      ALU_sva.sv(28)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_off_add
+#                      ALU_sva.sv(27)                     0          1
+# /\ALU_top#inst_design /inst_sva/assert__reset_on
+#                      ALU_sva.sv(26)                     0          1
+# 
+# Total Coverage By Instance (filtered view): 96.66%
+# 
+# End time: 19:52:50 on Sep 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# reading C:/questasim64_2021.1/win64/../modelsim.ini
+# Loading project f
