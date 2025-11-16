@@ -1,0 +1,62 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /FSM_package
+=== Design Unit: work.FSM_package
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          1        na        na        na
+            Covergroup Bins          1         1         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /FSM_package/fsm_transaction/covgrp             100.00%        100          -    Covered              
+    covered/total bins:                                     1          1          -                      
+    missing/total bins:                                     0          1          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cv1                                    100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/FSM_package::fsm_transaction::covgrp  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     1          1          -                      
+    missing/total bins:                                     0          1          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cv1                                    100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seq_transition                                130          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /FSM_package/fsm_transaction/covgrp             100.00%        100          -    Covered              
+    covered/total bins:                                     1          1          -                      
+    missing/total bins:                                     0          1          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cv1                                    100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/FSM_package::fsm_transaction::covgrp  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     1          1          -                      
+    missing/total bins:                                     0          1          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cv1                                    100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seq_transition                                130          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 100.00%
+
