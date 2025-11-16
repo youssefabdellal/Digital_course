@@ -1,0 +1,79 @@
+# vsim -voptargs="+acc" priority_enc_top -coverage -sv_seed random -l sim.log 
+# Start time: 19:55:51 on Sep 18,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.priority_enc_top(fast)
+# Loading work.priority_enc_if(fast__1)
+# Loading work.priority_enc(fast)
+# Loading work.priority_enc_sva(fast)
+# Loading work.priority_enc_tb(fast)
+# Sv_Seed = 1554458685
+# D = 0000 , Y = 00 , enc_TEST.valid = 0
+# D = 0001 , Y = 00 , enc_TEST.valid = x
+# D = 0010 , Y = 00 , enc_TEST.valid = 0
+# D = 0011 , Y = 11 , enc_TEST.valid = 1
+# D = 0100 , Y = 10 , enc_TEST.valid = 1
+# D = 0101 , Y = 11 , enc_TEST.valid = 1
+# D = 0110 , Y = 01 , enc_TEST.valid = 1
+# D = 0111 , Y = 11 , enc_TEST.valid = 1
+# D = 1000 , Y = 10 , enc_TEST.valid = 1
+# D = 1001 , Y = 11 , enc_TEST.valid = 1
+# D = 1010 , Y = 00 , enc_TEST.valid = 1
+# D = 1011 , Y = 11 , enc_TEST.valid = 1
+# D = 1100 , Y = 10 , enc_TEST.valid = 1
+# D = 1101 , Y = 11 , enc_TEST.valid = 1
+# D = 1110 , Y = 01 , enc_TEST.valid = 1
+# D = 1111 , Y = 11 , enc_TEST.valid = 1
+# D = 0000 , Y = 10 , enc_TEST.valid = 1
+# ** Note: $stop    : priority_enc_tb.sv(15)
+#    Time: 70 ns  Iteration: 1  Instance: /priority_enc_top/inst_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 15
+add wave -position insertpoint  \
+sim:/priority_enc_top/inst_interface/clk \
+sim:/priority_enc_top/inst_interface/rst \
+sim:/priority_enc_top/inst_interface/D \
+sim:/priority_enc_top/inst_interface/Y \
+sim:/priority_enc_top/inst_interface/valid
+add wave /priority_enc_top/inst_design/inst_sva/assert__rst_on /priority_enc_top/inst_design/inst_sva/assert__rst_off_bit0 /priority_enc_top/inst_design/inst_sva/assert__rst_off_bit1 /priority_enc_top/inst_design/inst_sva/assert__rst_off_bit2 /priority_enc_top/inst_design/inst_sva/assert__rst_off_bit3 /priority_enc_top/inst_design/inst_sva/assert__rst_off_zero
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.priority_enc_top(fast)
+# Loading work.priority_enc_if(fast__1)
+# Loading work.priority_enc(fast)
+# Loading work.priority_enc_sva(fast)
+# Loading work.priority_enc_tb(fast)
+run -all
+# D = 0000 , Y = 00 , enc_TEST.valid = 0
+# D = 0001 , Y = 00 , enc_TEST.valid = x
+# D = 0010 , Y = 00 , enc_TEST.valid = 0
+# D = 0011 , Y = 11 , enc_TEST.valid = 1
+# D = 0100 , Y = 10 , enc_TEST.valid = 1
+# D = 0101 , Y = 11 , enc_TEST.valid = 1
+# D = 0110 , Y = 01 , enc_TEST.valid = 1
+# D = 0111 , Y = 11 , enc_TEST.valid = 1
+# D = 1000 , Y = 10 , enc_TEST.valid = 1
+# D = 1001 , Y = 11 , enc_TEST.valid = 1
+# D = 1010 , Y = 00 , enc_TEST.valid = 1
+# D = 1011 , Y = 11 , enc_TEST.valid = 1
+# D = 1100 , Y = 10 , enc_TEST.valid = 1
+# D = 1101 , Y = 11 , enc_TEST.valid = 1
+# D = 1110 , Y = 01 , enc_TEST.valid = 1
+# D = 1111 , Y = 11 , enc_TEST.valid = 1
+# D = 0000 , Y = 10 , enc_TEST.valid = 1
+# ** Note: $stop    : priority_enc_tb.sv(15)
+#    Time: 70 ns  Iteration: 1  Instance: /priority_enc_top/inst_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 15
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1/f.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (E:/Digital_course/verefication/session4/ASSAIGNMENT2/P1/f.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:58:55 on Sep 18,2025, Elapsed time: 0:03:04
+# Errors: 2, Warnings: 1
+# reading C:/questasim64_2021.1/win64/../modelsim.ini
+# Loading project f
