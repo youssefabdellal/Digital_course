@@ -1,0 +1,194 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /ALSU_coverage_pkg
+=== Design Unit: work.ALSU_coverage_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses         11        na        na        na
+            Covergroup Bins         30        30         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /ALSU_coverage_pkg/ALSU_coverage/covcode        100.00%        100          -    Covered              
+    covered/total bins:                                    30         30          -                      
+    missing/total bins:                                     0         30          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint A_cp                                   100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin A_data_0                                      379          1          -    Covered              
+        bin A_data_max                                    249          1          -    Covered              
+        bin A_data_min                                    282          1          -    Covered              
+        bin A_data_walkingones[1]                          40          1          -    Covered              
+        default bin A_data_default                        850                     -    Occurred             
+    Coverpoint B_cp                                   100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin B_data_0                                      409          1          -    Covered              
+        bin B_data_max                                    270          1          -    Covered              
+        bin B_data_min                                    290          1          -    Covered              
+        bin B_data_walkingones[1]                          31          1          -    Covered              
+        default bin B_data_default                        813                     -    Occurred             
+    Coverpoint ALU_CP                                 100.00%        100          -    Covered              
+        covered/total bins:                                 7          7          -                      
+        missing/total bins:                                 0          7          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin Bins_shift[SHIFT]                             285          1          -    Covered              
+        bin Bins_shift[ROTATE]                            299          1          -    Covered              
+        bin Bins_arith[ADD]                               270          1          -    Covered              
+        bin Bins_arith[MULT]                              306          1          -    Covered              
+        bin Bins_bitwise[OR]                              255          1          -    Covered              
+        bin Bins_bitwise[XOR]                             274          1          -    Covered              
+        bin Bins_invalid                                  310          1          -    Covered              
+    Coverpoint cin_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero_cin                                       75          1          -    Covered              
+        bin one_cin                                        64          1          -    Covered              
+    Coverpoint direction_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero_direction                                274          1          -    Covered              
+        bin one_direction                                 310          1          -    Covered              
+    Coverpoint serial_in_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero_serial_in                                130          1          -    Covered              
+        bin one__serial_in                                155          1          -    Covered              
+    Coverpoint invalid_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin invalid_opcode                                 77          1          -    Covered              
+    Cross arith_A                                     100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin arith_zero                                100          1          -    Covered              
+            bin arith_max                                 106          1          -    Covered              
+            bin arith_min                                 111          1          -    Covered              
+    Cross arith_B                                     100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin arith_zero                                113          1          -    Covered              
+            bin arith_max                                 111          1          -    Covered              
+            bin arith_min                                 120          1          -    Covered              
+    Cross walking_one_A                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin A_walkingones                              34          1          -    Covered              
+    Cross walking_one_B                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin B_walkingones                              30          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /ALSU_coverage_pkg/ALSU_coverage/covcode        100.00%        100          -    Covered              
+    covered/total bins:                                    30         30          -                      
+    missing/total bins:                                     0         30          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint A_cp                                   100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin A_data_0                                      379          1          -    Covered              
+        bin A_data_max                                    249          1          -    Covered              
+        bin A_data_min                                    282          1          -    Covered              
+        bin A_data_walkingones[1]                          40          1          -    Covered              
+        default bin A_data_default                        850                     -    Occurred             
+    Coverpoint B_cp                                   100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin B_data_0                                      409          1          -    Covered              
+        bin B_data_max                                    270          1          -    Covered              
+        bin B_data_min                                    290          1          -    Covered              
+        bin B_data_walkingones[1]                          31          1          -    Covered              
+        default bin B_data_default                        813                     -    Occurred             
+    Coverpoint ALU_CP                                 100.00%        100          -    Covered              
+        covered/total bins:                                 7          7          -                      
+        missing/total bins:                                 0          7          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin Bins_shift[SHIFT]                             285          1          -    Covered              
+        bin Bins_shift[ROTATE]                            299          1          -    Covered              
+        bin Bins_arith[ADD]                               270          1          -    Covered              
+        bin Bins_arith[MULT]                              306          1          -    Covered              
+        bin Bins_bitwise[OR]                              255          1          -    Covered              
+        bin Bins_bitwise[XOR]                             274          1          -    Covered              
+        bin Bins_invalid                                  310          1          -    Covered              
+    Coverpoint cin_cp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero_cin                                       75          1          -    Covered              
+        bin one_cin                                        64          1          -    Covered              
+    Coverpoint direction_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero_direction                                274          1          -    Covered              
+        bin one_direction                                 310          1          -    Covered              
+    Coverpoint serial_in_cp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero_serial_in                                130          1          -    Covered              
+        bin one__serial_in                                155          1          -    Covered              
+    Coverpoint invalid_cp                             100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin invalid_opcode                                 77          1          -    Covered              
+    Cross arith_A                                     100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin arith_zero                                100          1          -    Covered              
+            bin arith_max                                 106          1          -    Covered              
+            bin arith_min                                 111          1          -    Covered              
+    Cross arith_B                                     100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin arith_zero                                113          1          -    Covered              
+            bin arith_max                                 111          1          -    Covered              
+            bin arith_min                                 120          1          -    Covered              
+    Cross walking_one_A                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin A_walkingones                              34          1          -    Covered              
+    Cross walking_one_B                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin B_walkingones                              30          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 100.00%
+
