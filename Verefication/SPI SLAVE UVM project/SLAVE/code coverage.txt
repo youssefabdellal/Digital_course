@@ -1,0 +1,134 @@
+ QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 03:35:09 on Oct 17,2025
+# vcover report SLAVE.ucdb -details -annotate -all 
+# Coverage Report by instance with details
+# 
+# =================================================================================
+# === Instance: /inst_DUT
+# === Design Unit: work.SLAVE
+# =================================================================================
+# 
+# Assertion Coverage:
+#     Assertions                      14        14         0   100.00%
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /inst_DUT/assert_idle_to_chk_cmd
+#                      SPI_slave.sv(220)                  0          1
+# /inst_DUT/assert_idle_to_idle
+#                      SPI_slave.sv(223)                  0          1
+# /inst_DUT/assert_chk_cmd_to_write
+#                      SPI_slave.sv(226)                  0          1
+# /inst_DUT/assert_chk_cmd_to_read_add
+#                      SPI_slave.sv(229)                  0          1
+# /inst_DUT/assert_chk_cmd_to_read_data
+#                      SPI_slave.sv(232)                  0          1
+# /inst_DUT/assert_chk_cmd_to_idle
+#                      SPI_slave.sv(235)                  0          1
+# /inst_DUT/assert_write_to_idle
+#                      SPI_slave.sv(238)                  0          1
+# /inst_DUT/assert_write_to_write
+#                      SPI_slave.sv(241)                  0          1
+# /inst_DUT/assert_read_add_to_idle
+#                      SPI_slave.sv(244)                  0          1
+# /inst_DUT/assert_read_add_to_read_add
+#                      SPI_slave.sv(247)                  0          1
+# /inst_DUT/assert_read_data_to_idle
+#                      SPI_slave.sv(250)                  0          1
+# /inst_DUT/assert_read_data_to_read_data
+#                      SPI_slave.sv(253)                  0          1
+# /inst_DUT/assert_valid_states
+#                      SPI_slave.sv(256)                  0          1
+# /inst_DUT/a_check_reset
+#                      SPI_slave.sv(259)                  0          1
+# 
+# Directive Coverage:
+#     Directives                       8         8         0   100.00%
+# 
+# DIRECTIVE COVERAGE:
+# --------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Hits Status    
+#                                          Unit   UnitType                                     
+# --------------------------------------------------------------------------------------------
+# /inst_DUT/cover_idle_to_chk_cmd          SLAVE  Verilog  SVA  SPI_slave.sv(265)
+#                                                                                733 Covered   
+# /inst_DUT/cover_chk_cmd_to_write         SLAVE  Verilog  SVA  SPI_slave.sv(266)
+#                                                                                381 Covered   
+# /inst_DUT/cover_chk_cmd_to_read_add      SLAVE  Verilog  SVA  SPI_slave.sv(267)
+#                                                                                179 Covered   
+# /inst_DUT/cover_chk_cmd_to_read_data     SLAVE  Verilog  SVA  SPI_slave.sv(268)
+#                                                                                154 Covered   
+# /inst_DUT/cover_write_to_idle            SLAVE  Verilog  SVA  SPI_slave.sv(269)
+#                                                                                341 Covered   
+# /inst_DUT/cover_read_add_to_idle         SLAVE  Verilog  SVA  SPI_slave.sv(270)
+#                                                                                144 Covered   
+# /inst_DUT/cover_read_data_to_idle        SLAVE  Verilog  SVA  SPI_slave.sv(271)
+#                                                                                134 Covered   
+# /inst_DUT/c_check_reset                  SLAVE  Verilog  SVA  SPI_slave.sv(272)
+#                                                                                114 Covered   
+# 
+# 
+# DIRECTIVE COVERAGE:
+# --------------------------------------------------------------------------------------------
+# Name                                     Design Design   Lang File(Line)      Hits Status    
+#                                          Unit   UnitType                                     
+# --------------------------------------------------------------------------------------------
+# /inst_DUT/cover_idle_to_chk_cmd          SLAVE  Verilog  SVA  SPI_slave.sv(265)
+#                                                                                733 Covered   
+# /inst_DUT/cover_chk_cmd_to_write         SLAVE  Verilog  SVA  SPI_slave.sv(266)
+#                                                                                381 Covered   
+# /inst_DUT/cover_chk_cmd_to_read_add      SLAVE  Verilog  SVA  SPI_slave.sv(267)
+#                                                                                179 Covered   
+# /inst_DUT/cover_chk_cmd_to_read_data     SLAVE  Verilog  SVA  SPI_slave.sv(268)
+#                                                                                154 Covered   
+# /inst_DUT/cover_write_to_idle            SLAVE  Verilog  SVA  SPI_slave.sv(269)
+#                                                                                341 Covered   
+# /inst_DUT/cover_read_add_to_idle         SLAVE  Verilog  SVA  SPI_slave.sv(270)
+#                                                                                144 Covered   
+# /inst_DUT/cover_read_data_to_idle        SLAVE  Verilog  SVA  SPI_slave.sv(271)
+#                                                                                134 Covered   
+# /inst_DUT/c_check_reset                  SLAVE  Verilog  SVA  SPI_slave.sv(272)
+#                                                                                114 Covered   
+# 
+# TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 8
+# 
+# ASSERTION RESULTS:
+# --------------------------------------------------------------------
+# Name                 File(Line)                   Failure      Pass 
+#                                                   Count        Count
+# --------------------------------------------------------------------
+# /inst_DUT/assert_idle_to_chk_cmd
+#                      SPI_slave.sv(220)                  0          1
+# /inst_DUT/assert_idle_to_idle
+#                      SPI_slave.sv(223)                  0          1
+# /inst_DUT/assert_chk_cmd_to_write
+#                      SPI_slave.sv(226)                  0          1
+# /inst_DUT/assert_chk_cmd_to_read_add
+#                      SPI_slave.sv(229)                  0          1
+# /inst_DUT/assert_chk_cmd_to_read_data
+#                      SPI_slave.sv(232)                  0          1
+# /inst_DUT/assert_chk_cmd_to_idle
+#                      SPI_slave.sv(235)                  0          1
+# /inst_DUT/assert_write_to_idle
+#                      SPI_slave.sv(238)                  0          1
+# /inst_DUT/assert_write_to_write
+#                      SPI_slave.sv(241)                  0          1
+# /inst_DUT/assert_read_add_to_idle
+#                      SPI_slave.sv(244)                  0          1
+# /inst_DUT/assert_read_add_to_read_add
+#                      SPI_slave.sv(247)                  0          1
+# /inst_DUT/assert_read_data_to_idle
+#                      SPI_slave.sv(250)                  0          1
+# /inst_DUT/assert_read_data_to_read_data
+#                      SPI_slave.sv(253)                  0          1
+# /inst_DUT/assert_valid_states
+#                      SPI_slave.sv(256)                  0          1
+# /inst_DUT/a_check_reset
+#                      SPI_slave.sv(259)                  0          1
+# 
+# Total Coverage By Instance (filtered view): 100.00%
+# 
+# End time: 03:35:09 on Oct 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
